@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFDD0"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ToDoList"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="142dp"
+        android:backgroundTint="#678C40"
+        android:text="Better habits, better life!"
+        android:textColor="#678C40"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="733dp" />
+
+    <Button
+        android:id="@+id/ToDoList"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/reminders"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-2dp"
+        android:autoText="false"
+        android:backgroundTint="#678C40"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:text="To-Do List"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_menu_today"
+        app:iconSize="30dp"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <Button
+        android:id="@+id/reminders"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#678C40"
+        android:text="Reminders"
+        android:textSize="18sp"
+        app:icon="@android:drawable/ic_lock_idle_alarm"
+        app:iconSize="30dp"
+        app:strokeColor="#03A9F4"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:src="@drawable/swelogo"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/un"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFDD0"
+    tools:context=".UserReminders">
+
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="67dp"
+        android:layout_height="42dp"
+
+        app:srcCompat="@drawable/homebutton" />
+
+    <ImageView
+        android:id="@+id/addButton"
+        android:layout_width="67dp"
+        android:layout_height="42dp"
+
+        android:layout_marginLeft="276dp"
+        android:layout_toRightOf="@id/homeButton"
+        app:srcCompat="@drawable/addbutton" />
+
+    <TextView
+        android:id="@+id/drinkWater"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/homeButton"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="113dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Drink Water"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#678C40"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:emojiCompatEnabled="false" />
+
+    <TextView
+        android:id="@+id/BreathExercise"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/drinkWater"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="41dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Breath Exercise"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#678C40"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ReadQuran"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/BreathExercise"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Read Quran"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#678C40"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Meditate"
+        android:layout_width="194dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/BreathExercise"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="129dp"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Meditate"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#678C40"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/editButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_marginLeft="-88dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/drinkWater"
+        android:backgroundTint="#678C40"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addButton"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="110dp"
+        android:layout_toRightOf="@id/editButton"
+        android:backgroundTint="#678C40"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <Switch
+        android:id="@+id/activation"
+        android:layout_width="85dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/homeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/drinkWater"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:isScrollContainer="false"
+        android:scrollbarSize="10dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/drinkWater"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="57dp"
+        android:layout_toRightOf="@id/homeButton"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="Number of reminders:"
+        android:textColor="#678C40"
+        android:textSize="18sp" />
+
+</RelativeLayout>

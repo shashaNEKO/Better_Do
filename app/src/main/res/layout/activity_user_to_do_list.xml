@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBFDD0"
+    tools:context=".UserToDoList">
+
+    <ImageView
+        android:id="@+id/homeButton"
+        android:layout_width="67dp"
+        android:layout_height="42dp"
+
+        app:srcCompat="@drawable/homebutton" />
+
+    <ImageView
+        android:id="@+id/addButton"
+        android:layout_width="67dp"
+        android:layout_height="42dp"
+
+        android:layout_marginLeft="276dp"
+        android:layout_toRightOf="@id/homeButton"
+        app:srcCompat="@drawable/addbutton" />
+
+</RelativeLayout>
